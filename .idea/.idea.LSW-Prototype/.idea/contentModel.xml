@@ -16,9 +16,10 @@
             <e p="BaseInventory.cs" t="Include" />
             <e p="CharacterController.cs" t="Include" />
             <e p="NpcInventory.cs" t="Include" />
-            <e p="PlayerInventory.cs" t="Include" />
+            <e p="PlayerBaseInventory.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
+            <e p="ArrowActivator.cs" t="Include" />
             <e p="UiManager.cs" t="Include" />
           </e>
         </e>
