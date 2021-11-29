@@ -13,24 +13,37 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/BaseInventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InteractableObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ItemSlot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ArrowActivator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/UI_Inventory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/SingleItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/DragAndDrop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/Item.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerBaseInventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UiManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/CharacterController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerInventory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/ItemAssets.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/CharacterController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InteractableObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Item.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/InventoryManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/BaseInventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ArrowActivator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/DragAndDrop.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerBaseInventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/CharacterController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/SingleItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemAssets.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ItemSlot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/UI_Inventory.cs" />
       </list>
     </option>
   </component>
@@ -96,6 +109,13 @@
       <workItem from="1638090113350" duration="1772000" />
       <workItem from="1638091940745" duration="775000" />
       <workItem from="1638116280743" duration="688000" />
+      <workItem from="1638138842024" duration="764000" />
+      <workItem from="1638142328671" duration="1190000" />
+      <workItem from="1638145824652" duration="1825000" />
+      <workItem from="1638147699121" duration="947000" />
+      <workItem from="1638168670427" duration="1885000" />
+      <workItem from="1638170591960" duration="2214000" />
+      <workItem from="1638180721425" duration="1007000" />
     </task>
     <servers />
   </component>
@@ -116,5 +136,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="769" y="221" key="RiderGenerateDialog" timestamp="1638142478623">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="221" key="RiderGenerateDialog/-1920.7.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638142478623" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1638168887573">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.7.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638168887573" />
   </component>
 </project>

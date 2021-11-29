@@ -9,10 +9,19 @@ public class Inventory
     public Inventory()
     {
         itemList = new List<Item>();
+        AddItem(new Item(Item.ItemType.Hair, 0,1));
+        AddItem(new Item(Item.ItemType.Hair, 0,1));
+        AddItem(new Item(Item.ItemType.Hair, 0,1));
+        Debug.Log(itemList.Count);
     }
 
     public void AddItem(Item item)
     {
         itemList.Add(item);
+    }
+
+    public List<Item> GetItemList()
+    {
+        return itemList;
     }
 }

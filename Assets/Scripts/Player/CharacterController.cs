@@ -14,6 +14,11 @@ public class CharacterController : MonoBehaviour
 
     [Header("Character Settings")]
     [SerializeField] private float movementSpeed = 2f;
+    
+    [Header("References")]
+    [SerializeField] private UI_Inventory uiInventory;
+
+    private Inventory inventory;
 
     private Vector2 motionVector;
     
@@ -25,7 +30,9 @@ public class CharacterController : MonoBehaviour
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
-
+        
+        inventory = new Inventory();
+        uiInventory.SetInventory(inventory);
     }
 
     private void Update()

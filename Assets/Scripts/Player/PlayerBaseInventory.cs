@@ -7,8 +7,6 @@ public class PlayerBaseInventory : BaseInventory
     
     public delegate void MoneyChanged(int amt);
     public static event MoneyChanged OnMoneyChanged;
-    // Start is called before the first frame update
-
 
     public override void Update()
     {
@@ -16,6 +14,11 @@ public class PlayerBaseInventory : BaseInventory
         {
             DeductMoney(10);
         }
+    }
+
+    public void AddItem(Item item)
+    {
+        
     }
 
     public bool DeductMoney(int amt)
