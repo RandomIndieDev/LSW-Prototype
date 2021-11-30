@@ -6,6 +6,7 @@ public class Item
 {
     
     public int itemCode;
+    public bool equiped;
     public int amount;
 
     public Item(int itemCode, int amount)

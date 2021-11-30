@@ -59,8 +59,10 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
                 ResetPosition();
                 return;
             }
-            
-            slot.EquipItem(GetComponent<ItemSlotData>().GetItemData());
+
+            var data = GetComponent<ItemSlotData>();
+            data.equiped = true;
+            slot.EquipItem(data.GetItemData());
             
         }
         else
@@ -68,7 +70,10 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
             if (wasOnInventorySlot)
             {
                 wasOnInventorySlot = false;
-                FindObjectOfType<PlayerController>().DisableOutfit(GetComponent<ItemSlotData>().GetItemData().itemType);
+                
+                var data = GetComponent<ItemSlotData>();
+                data.equiped = false;
+                FindObjectOfType<PlayerController>().DisableOutfit(data.GetItemData());
             }
         }
 

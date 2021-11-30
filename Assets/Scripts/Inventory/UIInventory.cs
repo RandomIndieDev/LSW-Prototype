@@ -15,6 +15,7 @@ public abstract class UIInventory: MonoBehaviour
     public void SetInventory(Inventory inventory)
     {
         this.inventory = inventory;
+        
         RefreshIventoryItems();
     }
 
@@ -26,14 +27,14 @@ public abstract class UIInventory: MonoBehaviour
         }
     }
 
-    public void AddItem(Item item)
+    public virtual void AddItem(Item item)
     {
         RectTransform itemSlotRectTransform =
             Instantiate(itemSlotTemplate, itemSlotContainer).GetComponent<RectTransform>();
                 
         itemSlotRectTransform.gameObject.SetActive(true);
             
-        itemSlotRectTransform.GetComponent<ItemSlotData>().SetItemData(ItemAssets.Instance.GetItemData(item.itemCode));
+        itemSlotRectTransform.GetComponent<ItemSlotData>().SetItemData(ItemAssets.Instance.GetItemData(item.itemCode), item.equiped);
 
         Image itemImage = itemSlotRectTransform.Find("Image").GetComponent<Image>();
         itemImage.sprite = item.GetSprite();

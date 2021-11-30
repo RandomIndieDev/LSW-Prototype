@@ -5,4 +5,6 @@ using UnityEngine;
 public interface IShopCustomer
 {
     void BoughtItem(int itemCode);
+
+    void SellItem(int itemCode);
 }

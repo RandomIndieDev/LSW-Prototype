@@ -12,21 +12,21 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/ShopSellerInventory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/BaseInventory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/NpcInventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Functionality/ChangeArea.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ArrowActivator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/UIInventory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Functionality/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/ItemAssets.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/PlayerInventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NPCs/HallwayNpc.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ItemSlot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Functionality/ChatBubble.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/Sound.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NPCs/Shopkeeper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/PlayerSellerInventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/ItemAttributes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NPCs/InteractableCharacter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/DragAndDrop.cs" root0="FORCE_HIGHLIGHTING" />
@@ -35,7 +35,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Rail.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Curtain.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/Item.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerBaseInventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UiManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/ItemSlotData.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -58,24 +57,27 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Functionality/ChatBubble.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerBaseInventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemAssets.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemAttributes.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemSlotData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/CharacterController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Functionality/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ItemSlot.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/DragAndDrop.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Interractable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Curtain.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable/Rail.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Item.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/BaseInventory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PlayerInventory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IShopCustomer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ShopSellerInventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NPCs/InteractableCharacter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NPCs/Shopkeeper.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IShopCustomer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PlayerSellerInventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemAttributes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemSlotData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/DragAndDrop.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/UIInventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PlayerInventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ShopSellerInventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Sound/Sound.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Sound/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
       </list>
     </option>
@@ -97,6 +99,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -171,7 +174,14 @@
       <workItem from="1638286044912" duration="1783000" />
       <workItem from="1638287942517" duration="1746000" />
       <workItem from="1638289773089" duration="1756000" />
-      <workItem from="1638291602741" duration="1415000" />
+      <workItem from="1638291602741" duration="2036000" />
+      <workItem from="1638293691606" duration="1825000" />
+      <workItem from="1638295555797" duration="1816000" />
+      <workItem from="1638297418270" duration="656000" />
+      <workItem from="1638300338958" duration="1787000" />
+      <workItem from="1638302191793" duration="1810000" />
+      <workItem from="1638304045675" duration="1912000" />
+      <workItem from="1638306012762" duration="714000" />
     </task>
     <servers />
   </component>
@@ -199,6 +209,10 @@
     </state>
     <state x="-1151" y="228" key="RiderGenerateDialog/-1920.7.1920.1040/0.0.1920.1040@-1920.7.1920.1040" timestamp="1638273793642" />
     <state x="769" y="221" key="RiderGenerateDialog/-1920.7.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638142478623" />
+    <state x="-998" y="155" key="SettingsEditor" timestamp="1638305091068">
+      <screen x="-1920" y="7" width="1920" height="1040" />
+    </state>
+    <state x="-998" y="155" key="SettingsEditor/-1920.7.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638305091068" />
     <state x="46" y="0" width="1279" height="1025" maximized="true" key="dock-window-1" timestamp="1638251971937">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

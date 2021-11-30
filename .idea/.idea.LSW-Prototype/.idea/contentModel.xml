@@ -11,10 +11,8 @@
             <e p="CameraController.cs" t="Include" />
           </e>
           <e p="Functionality" t="Include">
-            <e p="AudioManager.cs" t="Include" />
             <e p="ChangeArea.cs" t="Include" />
             <e p="ChatBubble.cs" t="Include" />
-            <e p="Sound.cs" t="Include" />
           </e>
           <e p="Interactable" t="Include">
             <e p="Curtain.cs" t="Include" />
@@ -31,6 +29,7 @@
             <e p="ItemAttributes.cs" t="Include" />
             <e p="ItemSlotData.cs" t="Include" />
             <e p="PlayerInventory.cs" t="Include" />
+            <e p="PlayerSellerInventory.cs" t="Include" />
             <e p="ShopSellerInventory.cs" t="Include" />
             <e p="UIInventory.cs" t="Include" />
           </e>
@@ -40,10 +39,11 @@
             <e p="Shopkeeper.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
-            <e p="BaseInventory.cs" t="Include" />
-            <e p="NpcInventory.cs" t="Include" />
-            <e p="PlayerBaseInventory.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
+          </e>
+          <e p="Sound" t="Include">
+            <e p="AudioManager.cs" t="Include" />
+            <e p="Sound.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
             <e p="ArrowActivator.cs" t="Include" />

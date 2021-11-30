@@ -39,5 +39,6 @@ public class ShopSellerInventory : UIInventory
     public void Hide()
     {
         uiWindow.SetActive(false);
+        
     }
 }

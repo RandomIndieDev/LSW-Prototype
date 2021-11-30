@@ -87,9 +87,9 @@ public class PlayerController : MonoBehaviour, IShopCustomer
         accessoryAnimator.SetBool(Moving, !(Math.Abs(motionVector.x) < 0.01 && Math.Abs(motionVector.y) < 0.01));
     }
 
-    public void DisableOutfit(ItemAttributes.ItemType itemType)
+    public void DisableOutfit(ItemAttributes itemData)
     {
-        switch (itemType)
+        switch (itemData.itemType)
         {
             case ItemAttributes.ItemType.Hair:
                 hairAnimator.gameObject.GetComponent<SpriteRenderer>().enabled = false;
@@ -104,6 +104,9 @@ public class PlayerController : MonoBehaviour, IShopCustomer
                 wearingAccessory = false;
                 break;
         }
+        
+        inventory.EquipItem(itemData.itemCode, false);
+        
     }
 
     public void ChangeOutfit(ItemAttributes data)
@@ -148,20 +151,24 @@ public class PlayerController : MonoBehaviour, IShopCustomer
         if (target != null)
         {
             target.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("Animation/" + data.animatorName);
+            inventory.EquipItem(data.itemCode, true);
         }
+    }
+
+    public void UpdateInventory()
+    {
+        uiInventory.RemoveItem(inventory);
     }
 
     public void BoughtItem(int itemCode)
     {
 
         var itemPrice = ItemAssets.Instance.GetBuyPrice(itemCode);
-        
-        Debug.Log(itemPrice);
 
-
-        if (money - itemPrice <= 0)
+        if (money - itemPrice <= 0 || inventory.ContainsItem(itemCode))
         {
             // TODO: FAILED INDICATOR
+            
             return;
         }
             
@@ -173,5 +180,24 @@ public class PlayerController : MonoBehaviour, IShopCustomer
         
         inventory.AddItem(newItem);
         uiInventory.AddItem(newItem);
+    }
+
+    public void SellItem(int itemCode)
+    {
+        var itemPrice = ItemAssets.Instance.GetSellPrice(itemCode);
+        
+        money += itemPrice;
+        UiManager.Instance.UpdateMoneyAmt(money);
+        
+        inventory.RemoveItem(itemCode);
+        uiInventory.RemoveItem(inventory);
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Wall"))
+        {
+            AudioManager.instance.Play("player_hit_wall");
+        }
     }
 }

@@ -20,5 +20,5 @@ public class ItemAttributes
     public int itemBuyPrice;
     public int itemSellPrice;
     public String animatorName;
-    
+
 }

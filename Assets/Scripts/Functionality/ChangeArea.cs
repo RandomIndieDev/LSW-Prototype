@@ -16,6 +16,7 @@ public class ChangeArea : MonoBehaviour
         {
             other.gameObject.transform.position = SpawnWaypoint.transform.position;
             OnAreaChange(SpawnWaypoint.name);
+            AudioManager.instance.Play("player_change_loc");
         }
     }
 }
