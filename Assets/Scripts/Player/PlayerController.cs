@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, IShopCustomer
 {
     private Rigidbody2D _rigidbody2D;
     private Animator _animator;
@@ -23,11 +23,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float movementSpeed = 2f;
     
     [Header("References")]
-    [SerializeField] private UIInventory uiInventory;
+    [SerializeField] private PlayerInventory uiInventory;
 
     private Inventory inventory;
 
     private Vector2 motionVector;
+
+    private int money = 100;
     
     private static readonly int Horizontal = Animator.StringToHash("Horizontal");
     private static readonly int Vertical = Animator.StringToHash("Vertical");
@@ -38,7 +40,6 @@ public class PlayerController : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
         inventory = new Inventory();
-        
         
         
         uiInventory.SetInventory(inventory);
@@ -148,5 +149,29 @@ public class PlayerController : MonoBehaviour
         {
             target.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("Animation/" + data.animatorName);
         }
+    }
+
+    public void BoughtItem(int itemCode)
+    {
+
+        var itemPrice = ItemAssets.Instance.GetBuyPrice(itemCode);
+        
+        Debug.Log(itemPrice);
+
+
+        if (money - itemPrice <= 0)
+        {
+            // TODO: FAILED INDICATOR
+            return;
+        }
+            
+
+        money -= itemPrice;
+        UiManager.Instance.UpdateMoneyAmt(money);
+        
+        var newItem = new Item(itemCode, 1);
+        
+        inventory.AddItem(newItem);
+        uiInventory.AddItem(newItem);
     }
 }

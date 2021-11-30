@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class Item
 {
-
-    public ItemAttributes.ItemType itemType;
+    
     public int itemCode;
     public int amount;
 
-    public Item(ItemAttributes.ItemType itemType, int itemCode, int amount)
+    public Item(int itemCode, int amount)
     {
-        this.itemType = itemType;
         this.itemCode = itemCode;
         this.amount = amount;
     }

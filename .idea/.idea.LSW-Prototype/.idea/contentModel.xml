@@ -14,8 +14,15 @@
             <e p="AudioManager.cs" t="Include" />
             <e p="ChangeArea.cs" t="Include" />
             <e p="ChatBubble.cs" t="Include" />
-            <e p="Interractable.cs" t="Include" />
             <e p="Sound.cs" t="Include" />
+          </e>
+          <e p="Interactable" t="Include">
+            <e p="Curtain.cs" t="Include" />
+            <e p="Interractable.cs" t="Include" />
+            <e p="Rail.cs" t="Include" />
+          </e>
+          <e p="Interfaces" t="Include">
+            <e p="IShopCustomer.cs" t="Include" />
           </e>
           <e p="Inventory" t="Include">
             <e p="Inventory.cs" t="Include" />
@@ -23,6 +30,8 @@
             <e p="ItemAssets.cs" t="Include" />
             <e p="ItemAttributes.cs" t="Include" />
             <e p="ItemSlotData.cs" t="Include" />
+            <e p="PlayerInventory.cs" t="Include" />
+            <e p="ShopSellerInventory.cs" t="Include" />
             <e p="UIInventory.cs" t="Include" />
           </e>
           <e p="NPCs" t="Include">

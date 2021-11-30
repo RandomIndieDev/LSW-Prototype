@@ -9,12 +9,15 @@ public abstract class InteractableCharacter : MonoBehaviour
     [Header("References")]
     [SerializeField] protected GameObject DialogBox;
     
-    private bool interactable;
+    protected bool interactable;
 
-    protected void Update()
+    protected GameObject interactor;
+
+    protected virtual void Update()
     {
         if (interactable)
         {
+            
             if (Input.GetButtonDown("Interact"))
             {
                 DoInteract();
@@ -26,12 +29,13 @@ public abstract class InteractableCharacter : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            interactor = other.gameObject;
             DialogBox.SetActive(true);
             interactable = true;
         }
     }
 
-    protected void OnTriggerExit2D(Collider2D other)
+    protected virtual void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {

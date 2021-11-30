@@ -4,21 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIInventory: MonoBehaviour
+public abstract class UIInventory: MonoBehaviour
 {
-    [Header("References")] 
-    [SerializeField] public GameObject uiInventory;
-    
-    private Inventory inventory;
+    [Header("References")]
+    [SerializeField] protected Transform itemSlotContainer;
+    [SerializeField] protected Transform itemSlotTemplate;
 
-    private Transform itemSlotContainer;
-    private Transform itemSlotTemplate;
-
-    private void Awake()
-    {
-        itemSlotContainer = uiInventory.transform.Find("Item Slot Container");
-        itemSlotTemplate = itemSlotContainer.Find("Item Slot Template");
-    }
+    protected Inventory inventory;
 
     public void SetInventory(Inventory inventory)
     {
@@ -26,23 +18,27 @@ public class UIInventory: MonoBehaviour
         RefreshIventoryItems();
     }
 
-    private void RefreshIventoryItems()
+    protected virtual void RefreshIventoryItems()
     {
         foreach (Item item in inventory.GetItemList())
         {
-            RectTransform itemSlotRectTransform =
-                Instantiate(itemSlotTemplate, itemSlotContainer).GetComponent<RectTransform>();
-                
-            itemSlotRectTransform.gameObject.SetActive(true);
-            
-            itemSlotRectTransform.GetComponent<ItemSlotData>().SetItemData(ItemAssets.Instance.GetItemData(item.itemCode));
-
-            Image itemImage = itemSlotRectTransform.Find("Image").GetComponent<Image>();
-            itemImage.sprite = item.GetSprite();
-
-            itemSlotRectTransform.SetParent(itemSlotContainer.gameObject.transform);
-
+            AddItem(item);
         }
+    }
+
+    public void AddItem(Item item)
+    {
+        RectTransform itemSlotRectTransform =
+            Instantiate(itemSlotTemplate, itemSlotContainer).GetComponent<RectTransform>();
+                
+        itemSlotRectTransform.gameObject.SetActive(true);
+            
+        itemSlotRectTransform.GetComponent<ItemSlotData>().SetItemData(ItemAssets.Instance.GetItemData(item.itemCode));
+
+        Image itemImage = itemSlotRectTransform.Find("Image").GetComponent<Image>();
+        itemImage.sprite = item.GetSprite();
+
+        itemSlotRectTransform.SetParent(itemSlotContainer.gameObject.transform);
     }
     
 }

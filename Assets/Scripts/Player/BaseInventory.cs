@@ -9,11 +9,6 @@ public abstract class BaseInventory : MonoBehaviour
     protected int money = 100;
     protected Inventory inventory;
 
-    protected void Awake()
-    {
-        inventory = new Inventory();
-    }
-
     public abstract void Update();
 
     public bool DeductMoney(int amt)

@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 403018463}
   - component: {fileID: 403018467}
   - component: {fileID: 403018466}
-  - component: {fileID: 403018465}
-  - component: {fileID: 403018464}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -77,30 +75,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!225 &403018465
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 403018462}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
---- !u!114 &403018464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 403018462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b86e7cabeff84d24c8f5ec14a7f882c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1183667758100872309
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,7 +86,9 @@ GameObject:
   - component: {fileID: 2944354812851646051}
   - component: {fileID: 4752154857773304629}
   - component: {fileID: 880001191866096504}
-  - component: {fileID: 1974762695}
+  - component: {fileID: 1463692913}
+  - component: {fileID: 1463692911}
+  - component: {fileID: 1463692912}
   m_Layer: 5
   m_Name: Grid Element
   m_TagString: Untagged
@@ -162,14 +138,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8962264, g: 0.5645011, b: 0.5538003, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 9a1cbacbfbd2d1b4d9b15b8f66ce9631, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -178,7 +154,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1974762695
+--- !u!225 &1463692913
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183667758100872309}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &1463692911
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -187,12 +175,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 1183667758100872309}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1a9d8729dab3e84da69d1781cea35a0, type: 3}
+  m_Script: {fileID: 11500000, guid: 9641d2948bbbac344aee87a744a71c34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseSlot: {fileID: 481824509407298016}
-  isResitricted: 0
-  allowedItemType: 0
+  itemAttributes:
+    itemCode: 0
+    itemType: 0
+    itemSprite: {fileID: 0}
+    itemBuyPrice: 0
+    itemSellPrice: 0
+    animatorName: 
+--- !u!114 &1463692912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183667758100872309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b86e7cabeff84d24c8f5ec14a7f882c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3670068564913940129
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,7 +208,6 @@ GameObject:
   - component: {fileID: 481824509407298016}
   - component: {fileID: 6987905470394324304}
   - component: {fileID: 1207429199}
-  - component: {fileID: 1207429198}
   m_Layer: 5
   m_Name: BaseRect
   m_TagString: Untagged
@@ -251,15 +254,3 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &1207429198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3670068564913940129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b86e7cabeff84d24c8f5ec14a7f882c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
