@@ -6,6 +6,16 @@ AnimatorOverrideController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Player_Hair_2
-  m_Controller: {fileID: 0}
-  m_Clips: []
+  m_Name: Player_Hair_3
+  m_Controller: {fileID: 9100000, guid: 87b364ec3bb72544cba92e1855368b08, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 31f0a6d3f716b4a40a44b45da487f58c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 0be3c8f0b8be06f4dbd74b882bfac940, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3214715f402027740bbcad2e19a881d7, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4603b92eae4007f46b651eb47711f7d9, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a7ab8cf673d095049982fad1611b4ecb, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 93dbfb6e16b388049a89907a61bb48cb, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 527615ca80967c3459f22b203896560b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f601db23b6590e9479d33e5bffb54618, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: d30558dde7ebc0040930e0f901b2dc54, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 96ed0bcce929fc44db33aadfa282d7e6, type: 2}

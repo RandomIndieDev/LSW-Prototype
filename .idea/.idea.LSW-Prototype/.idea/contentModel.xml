@@ -18,7 +18,6 @@
             <e p="Sound.cs" t="Include" />
           </e>
           <e p="Inventory" t="Include">
-            <e p="EquipPlacedItem.cs" t="Include" />
             <e p="Inventory.cs" t="Include" />
             <e p="Item.cs" t="Include" />
             <e p="ItemAssets.cs" t="Include" />

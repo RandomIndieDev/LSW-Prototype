@@ -79,6 +79,11 @@ public class PlayerController : MonoBehaviour
         outfitAnimator.SetFloat(Vertical, motionVector.y);
 
         outfitAnimator.SetBool(Moving, !(Math.Abs(motionVector.x) < 0.01 && Math.Abs(motionVector.y) < 0.01));
+        
+        accessoryAnimator.SetFloat(Horizontal, motionVector.x);
+        accessoryAnimator.SetFloat(Vertical, motionVector.y);
+
+        accessoryAnimator.SetBool(Moving, !(Math.Abs(motionVector.x) < 0.01 && Math.Abs(motionVector.y) < 0.01));
     }
 
     public void DisableOutfit(ItemAttributes.ItemType itemType)

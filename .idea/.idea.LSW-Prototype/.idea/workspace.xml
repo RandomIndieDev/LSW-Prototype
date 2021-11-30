@@ -24,7 +24,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NPCs/InteractableCharacter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/DragAndDrop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/UIInventory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/EquipPlacedItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Functionality/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/Item.cs" root0="FORCE_HIGHLIGHTING" />
@@ -59,13 +58,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/UIInventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemAttributes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Item.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemSlotData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/CharacterController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Functionality/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ItemSlot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/DragAndDrop.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" />
       </list>
     </option>
   </component>
@@ -152,6 +151,8 @@
       <workItem from="1638251974057" duration="1777000" />
       <workItem from="1638253798965" duration="984000" />
       <workItem from="1638262664405" duration="1602000" />
+      <workItem from="1638265194271" duration="1409000" />
+      <workItem from="1638267711210" duration="701000" />
     </task>
     <servers />
   </component>
