@@ -9,9 +9,9 @@ public class Inventory
     public Inventory()
     {
         itemList = new List<Item>();
-        AddItem(new Item(Item.ItemType.Hair, 0,1));
-        AddItem(new Item(Item.ItemType.Hair, 0,1));
-        AddItem(new Item(Item.ItemType.Hair, 0,1));
+        AddItem(new Item(ItemAttributes.ItemType.Hair, 0,1));
+        AddItem(new Item(ItemAttributes.ItemType.Hair, 0,1));
+        AddItem(new Item(ItemAttributes.ItemType.Hair, 0,1));
         Debug.Log(itemList.Count);
     }
 

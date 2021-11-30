@@ -13,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Confiners
   - 
   - 
   - 
@@ -46,4 +46,7 @@ TagManager:
     locked: 0
   - name: ForeGround
     uniqueID: 3728982607
+    locked: 0
+  - name: Text
+    uniqueID: 3867080017
     locked: 0

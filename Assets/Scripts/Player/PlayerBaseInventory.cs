@@ -5,18 +5,13 @@ using UnityEngine;
 public class PlayerBaseInventory : BaseInventory
 {
     
-    public delegate void MoneyChanged(int amt);
-    public static event MoneyChanged OnMoneyChanged;
-
-    public override void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            DeductMoney(10);
-        }
-    }
 
     public void AddItem(Item item)
+    {
+        
+    }
+
+    public override void Update()
     {
         
     }
@@ -25,7 +20,7 @@ public class PlayerBaseInventory : BaseInventory
     {
         var success = base.DeductMoney(amt);
         
-        if (OnMoneyChanged != null) OnMoneyChanged(money);
+        UiManager.Instance.UpdateMoneyAmt(amt);
 
         return success;
     }
@@ -33,6 +28,7 @@ public class PlayerBaseInventory : BaseInventory
     public void IncreaseMoney(int amt)
     {
         base.IncreaseMoney(amt);
-        if (OnMoneyChanged != null) OnMoneyChanged(money);
+        
+        UiManager.Instance.UpdateMoneyAmt(amt);
     }
 }

@@ -12,17 +12,26 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/BaseInventory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/InteractableObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/NpcInventory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Functionality/ChangeArea.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NPCs/HallwayNpc.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ItemSlot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Functionality/ChatBubble.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ArrowActivator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/UI_Inventory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/SingleItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NPCs/Shopkeeper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/ItemAttributes.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NPCs/InteractableCharacter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/DragAndDrop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/UIInventory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/EquipPlacedItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Functionality/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/Item.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerBaseInventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UiManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/CharacterController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/ItemSlotData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/ItemAssets.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -32,18 +41,31 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/InventoryManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInventory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/BaseInventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ArrowActivator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/DragAndDrop.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerBaseInventory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/CharacterController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/SingleItem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Item.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemAssets.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ItemSlot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/UI_Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interractable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Functionality/ChangeArea.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/SingleItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NPCs/InteractableObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NPCs/Shopkeeper.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NPCs/InteractableCharacter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NPCs/HallwayNpc.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Functionality/ChatBubble.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/BaseInventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerBaseInventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemAssets.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/UIInventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemAttributes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemSlotData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/CharacterController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Functionality/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ItemSlot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/DragAndDrop.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
       </list>
     </option>
   </component>
@@ -115,7 +137,21 @@
       <workItem from="1638147699121" duration="947000" />
       <workItem from="1638168670427" duration="1885000" />
       <workItem from="1638170591960" duration="2214000" />
-      <workItem from="1638180721425" duration="1007000" />
+      <workItem from="1638180721425" duration="1602000" />
+      <workItem from="1638183558695" duration="690000" />
+      <workItem from="1638191032474" duration="1062000" />
+      <workItem from="1638196239041" duration="1055000" />
+      <workItem from="1638198287078" duration="1395000" />
+      <workItem from="1638203966681" duration="2324000" />
+      <workItem from="1638236184359" duration="619000" />
+      <workItem from="1638239864087" duration="1394000" />
+      <workItem from="1638241759011" duration="1575000" />
+      <workItem from="1638243561456" duration="1423000" />
+      <workItem from="1638245642678" duration="1870000" />
+      <workItem from="1638250154463" duration="1772000" />
+      <workItem from="1638251974057" duration="1777000" />
+      <workItem from="1638253798965" duration="984000" />
+      <workItem from="1638262664405" duration="1602000" />
     </task>
     <servers />
   </component>
@@ -142,6 +178,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="221" key="RiderGenerateDialog/-1920.7.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638142478623" />
+    <state x="46" y="0" width="1279" height="1025" maximized="true" key="dock-window-1" timestamp="1638251971937">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="46" y="0" width="1279" height="1025" maximized="true" key="dock-window-1/-1920.7.1920.1040/0.0.1920.1040@-1920.7.1920.1040" timestamp="1638251971937" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1638168887573">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

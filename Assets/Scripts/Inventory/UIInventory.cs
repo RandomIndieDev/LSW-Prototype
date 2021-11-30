@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UI_Inventory: MonoBehaviour
+public class UIInventory: MonoBehaviour
 {
     [Header("References")] 
     [SerializeField] public GameObject uiInventory;
@@ -32,8 +32,10 @@ public class UI_Inventory: MonoBehaviour
         {
             RectTransform itemSlotRectTransform =
                 Instantiate(itemSlotTemplate, itemSlotContainer).GetComponent<RectTransform>();
-            
+                
             itemSlotRectTransform.gameObject.SetActive(true);
+            
+            itemSlotRectTransform.GetComponent<ItemSlotData>().SetItemData(ItemAssets.Instance.GetItemData(item.itemCode));
 
             Image itemImage = itemSlotRectTransform.Find("Image").GetComponent<Image>();
             itemImage.sprite = item.GetSprite();

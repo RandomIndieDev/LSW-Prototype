@@ -4,19 +4,12 @@ using UnityEngine;
 
 public class Item
 {
-    public enum ItemType
-    {
-        Clothes,
-        Accessories,
-        Hair,
-        None
-    }
 
-    public ItemType itemType;
+    public ItemAttributes.ItemType itemType;
     public int itemCode;
     public int amount;
 
-    public Item(ItemType itemType, int itemCode, int amount)
+    public Item(ItemAttributes.ItemType itemType, int itemCode, int amount)
     {
         this.itemType = itemType;
         this.itemCode = itemCode;
@@ -26,5 +19,15 @@ public class Item
     public Sprite GetSprite()
     {
         return ItemAssets.Instance.GetSprite(itemCode);
+    }
+
+    public int GetItemPrice()
+    {
+        return ItemAssets.Instance.GetBuyPrice(itemCode);
+    }
+
+    public int GetItemSellPrice()
+    {
+        return ItemAssets.Instance.GetSellPrice(itemCode);
     }
 }

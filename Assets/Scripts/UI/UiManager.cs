@@ -7,25 +7,24 @@ using UnityEngine.PlayerLoop;
 
 public class UiManager : MonoBehaviour
 {
+    
+    public static UiManager Instance { get; private set; }
+    
+    [Header("References")]
     public TextMeshProUGUI moneyAmtText;
+    
     public GameObject playerInventory;
+    public GameObject shopInventory;
 
     private bool isInventoryOpen;
+    private bool isShopOpen;
 
-    private void OnEnable()
+    private void Awake()
     {
-        PlayerBaseInventory.OnMoneyChanged += UpdateMoneyAmt;
-    }
+        Instance = this;
 
-    private void OnDisable()
-    {
-        PlayerBaseInventory.OnMoneyChanged -= UpdateMoneyAmt;
-    }
-
-
-    void UpdateMoneyAmt(int amt)
-    {
-        moneyAmtText.text = amt.ToString();
+        isShopOpen = false;
+        isInventoryOpen = false;
     }
 
     private void Update()
@@ -37,4 +36,25 @@ public class UiManager : MonoBehaviour
             playerInventory.SetActive(isInventoryOpen);
         }
     }
+
+
+    public void UpdateMoneyAmt(int amt)
+    {
+        moneyAmtText.text = amt.ToString();
+    }
+
+    public void ShowShopWindow()
+    {
+        if (isInventoryOpen || isShopOpen)
+            return;
+        
+        shopInventory.SetActive(true);
+    }
+
+    public void CloseShopWindow()
+    {
+        shopInventory.SetActive(false);
+    }
+
+
 }

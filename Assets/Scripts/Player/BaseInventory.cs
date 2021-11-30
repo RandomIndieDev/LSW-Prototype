@@ -9,7 +9,7 @@ public abstract class BaseInventory : MonoBehaviour
     protected int money = 100;
     protected Inventory inventory;
 
-    private void Awake()
+    protected void Awake()
     {
         inventory = new Inventory();
     }

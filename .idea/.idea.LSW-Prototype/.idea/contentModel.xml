@@ -7,19 +7,35 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
-          <e p="InteractableObject.cs" t="Include" />
+          <e p="Camera" t="Include">
+            <e p="CameraController.cs" t="Include" />
+          </e>
+          <e p="Functionality" t="Include">
+            <e p="AudioManager.cs" t="Include" />
+            <e p="ChangeArea.cs" t="Include" />
+            <e p="ChatBubble.cs" t="Include" />
+            <e p="Interractable.cs" t="Include" />
+            <e p="Sound.cs" t="Include" />
+          </e>
           <e p="Inventory" t="Include">
+            <e p="EquipPlacedItem.cs" t="Include" />
             <e p="Inventory.cs" t="Include" />
             <e p="Item.cs" t="Include" />
             <e p="ItemAssets.cs" t="Include" />
-            <e p="SingleItem.cs" t="Include" />
-            <e p="UI_Inventory.cs" t="Include" />
+            <e p="ItemAttributes.cs" t="Include" />
+            <e p="ItemSlotData.cs" t="Include" />
+            <e p="UIInventory.cs" t="Include" />
+          </e>
+          <e p="NPCs" t="Include">
+            <e p="HallwayNpc.cs" t="Include" />
+            <e p="InteractableCharacter.cs" t="Include" />
+            <e p="Shopkeeper.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="BaseInventory.cs" t="Include" />
-            <e p="CharacterController.cs" t="Include" />
             <e p="NpcInventory.cs" t="Include" />
             <e p="PlayerBaseInventory.cs" t="Include" />
+            <e p="PlayerController.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
             <e p="ArrowActivator.cs" t="Include" />

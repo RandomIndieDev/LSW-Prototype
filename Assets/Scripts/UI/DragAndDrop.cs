@@ -6,37 +6,93 @@ using UnityEngine.EventSystems;
 
 public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
-    private RectTransform _rectTransform;
-    private CanvasGroup _canvasGroup;
+    private RectTransform rectTransform;
+    private CanvasGroup canvasGroup;
 
     private Vector2 originalRectTransform;
 
+    private bool wasOnInventorySlot;
+
     private void Awake()
     {
-        _rectTransform = GetComponent<RectTransform>();
-        _canvasGroup = GetComponent<CanvasGroup>();
+        rectTransform = GetComponent<RectTransform>();
+        canvasGroup = GetComponent<CanvasGroup>();
+
+        wasOnInventorySlot = false;
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log("OnPointerDown");
+        originalRectTransform = rectTransform.anchoredPosition;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        originalRectTransform = _rectTransform.anchoredPosition;
-        _canvasGroup.blocksRaycasts = false;
+        originalRectTransform = rectTransform.anchoredPosition;
+        canvasGroup.blocksRaycasts = false;
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        //_rectTransform.anchoredPosition = originalRectTransform;
-        _canvasGroup.blocksRaycasts = true;
+        if (eventData.pointerEnter == null)
+        {
+            ResetPosition();
+            return;
+        }
+        
+        var slot = eventData.pointerEnter.GetComponent<ItemSlot>();
+
+        if (slot == null)
+        {
+            ResetPosition();
+            Debug.Log("Tezt");
+            return;
+        }
+
+        if (slot.isResitricted)
+        {
+            var itemData = GetComponent<ItemSlotData>().GetItemData();
+            wasOnInventorySlot = true;
+            
+            if (itemData.itemType != slot.allowedItemType)
+            {
+                ResetPosition();
+                return;
+            }
+            
+            slot.EquipItem(GetComponent<ItemSlotData>().GetItemData());
+            
+        }
+        else
+        {
+            if (wasOnInventorySlot)
+            {
+                wasOnInventorySlot = false;
+                FindObjectOfType<PlayerController>().DisableOutfit(GetComponent<ItemSlotData>().GetItemData().itemType);
+            }
+        }
+
+        gameObject.transform.SetParent(slot.transform);
+            
+        rectTransform.anchorMin = slot.baseSlot.anchorMin;
+        rectTransform.anchorMax = slot.baseSlot.anchorMax;
+        rectTransform.pivot = slot.baseSlot.pivot;
+        rectTransform.anchoredPosition = Vector3.zero;
+        
+        
+        
+
+        canvasGroup.blocksRaycasts = true;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        _rectTransform.anchoredPosition += eventData.delta;
+        rectTransform.anchoredPosition += eventData.delta;
     }
-    
+
+    private void ResetPosition()
+    {
+        rectTransform.anchoredPosition = originalRectTransform;
+        canvasGroup.blocksRaycasts = true;
+    }
 }
