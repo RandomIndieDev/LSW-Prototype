@@ -10,6 +10,7 @@ public abstract class InteractableCharacter : MonoBehaviour
     [SerializeField] protected GameObject DialogBox;
     
     protected bool interactable;
+    protected bool hasInteracted;
 
     protected GameObject interactor;
 
@@ -17,9 +18,9 @@ public abstract class InteractableCharacter : MonoBehaviour
     {
         if (interactable)
         {
-            
-            if (Input.GetButtonDown("Interact"))
+            if (Input.GetButtonDown("Interact") && !hasInteracted)
             {
+                
                 DoInteract();
             }
         }
@@ -27,7 +28,7 @@ public abstract class InteractableCharacter : MonoBehaviour
 
     protected void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !hasInteracted)
         {
             interactor = other.gameObject;
             DialogBox.SetActive(true);
@@ -37,11 +38,17 @@ public abstract class InteractableCharacter : MonoBehaviour
 
     protected virtual void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !hasInteracted)
         {
             DialogBox.SetActive(false);
             interactable = false;
         }
+    }
+
+    protected void DisableIndicator()
+    {
+        DialogBox.SetActive(false);
+        interactable = false;
     }
 
     protected abstract void DoInteract();

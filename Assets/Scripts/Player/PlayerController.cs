@@ -30,6 +30,8 @@ public class PlayerController : MonoBehaviour, IShopCustomer
     private Vector2 motionVector;
 
     private int money = 100;
+
+    public bool allowMove;
     
     private static readonly int Horizontal = Animator.StringToHash("Horizontal");
     private static readonly int Vertical = Animator.StringToHash("Vertical");
@@ -40,21 +42,22 @@ public class PlayerController : MonoBehaviour, IShopCustomer
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
         inventory = new Inventory();
-        
-        
+
+        allowMove = true;
         uiInventory.SetInventory(inventory);
     }
 
     private void Update()
     {
-
-        UpdateControllers();
+        if (allowMove)
+            UpdateControllers();
 
     }
     
     void FixedUpdate()
     {
-        Move();
+        if(allowMove)
+            Move();
     }
 
     private void Move()

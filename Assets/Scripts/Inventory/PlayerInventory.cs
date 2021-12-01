@@ -37,19 +37,26 @@ public class PlayerInventory : UIInventory
         itemSlotRectTransform.SetParent(SellingInventoryContainer.gameObject.transform);
     }
 
-    private void ClearInventories()
+    private void ClearInventory(Transform container)
     {
-        
-        for (int i = 1; i < itemSlotContainer.childCount; i++)
+        var count = 0;
+
+        foreach (Transform item in container)
         {
-            Destroy(SellingInventoryContainer.GetChild(i).gameObject);
-            Destroy(itemSlotContainer.GetChild(i).gameObject);
+            if (count <= 0)
+            {
+                count++;
+                continue;
+            }
+            
+            Destroy(item.gameObject);
         }
     }
 
     public void RemoveItem(Inventory inventory)
     {
-        ClearInventories();
+        ClearInventory(SellingInventoryContainer);
+        ClearInventory(itemSlotContainer);
         
         SetInventory(inventory);
     }
@@ -57,5 +64,13 @@ public class PlayerInventory : UIInventory
     public void SellItem(int itemCode)
     {
         shopCustomer.SellItem(itemCode);
+    }
+
+    public void UpdateInventory()
+    {
+        ClearInventory(SellingInventoryContainer);
+        ClearInventory(itemSlotContainer);
+        
+        SetInventory(inventory);
     }
 }

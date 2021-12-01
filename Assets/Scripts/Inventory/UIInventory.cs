@@ -23,6 +23,9 @@ public abstract class UIInventory: MonoBehaviour
     {
         foreach (Item item in inventory.GetItemList())
         {
+            if (item.equiped)
+                continue;
+            
             AddItem(item);
         }
     }
