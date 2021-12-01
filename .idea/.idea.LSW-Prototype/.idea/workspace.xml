@@ -82,9 +82,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Functionality/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Functionality/Dialog.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NPCs/InteractableCharacter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NPCs/TalkableNpc.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UiManager.cs" />
       </list>
     </option>
   </component>
@@ -195,6 +195,7 @@
       <workItem from="1638384886730" duration="1773000" />
       <workItem from="1638386713175" duration="2262000" />
       <workItem from="1638389222515" duration="1412000" />
+      <workItem from="1638391667103" duration="688000" />
     </task>
     <servers />
   </component>
